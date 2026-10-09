@@ -1,0 +1,11 @@
+ThaiSubOverlay - upload from computer
+
+1. Extract this ZIP on your computer.
+2. Open https://github.com/phraisohn/ThaiSubOverlay
+3. Click Add file > Upload files (or the Upload files link).
+4. Drag the CONTENTS of the extracted folder (not the ZIP itself) onto the GitHub upload area. Check that the app/ and .github/workflows/android.yml paths are preserved. Hidden .github may require enabling hidden files.
+5. Click Commit changes.
+6. Open https://github.com/phraisohn/ThaiSubOverlay/actions and click Build Android APK. Wait for green check.
+7. Open the successful run > Artifacts > download the APK artifact ZIP, extract app-debug.apk, and install it on Android.
+
+NOTE: Prototype only: manually enter English text, translate locally with ML Kit, display floating Thai text. It DOES NOT read Netflix subtitles or audio automatically. Build has not been executed in this environment.
