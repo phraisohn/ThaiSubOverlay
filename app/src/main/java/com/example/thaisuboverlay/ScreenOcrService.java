@@ -70,7 +70,8 @@ public class ScreenOcrService extends Service {
             int top=(int)(h*0.55f);
             Bitmap crop=Bitmap.createBitmap(bitmap,0,top,w,h-top);
             bitmap.recycle();
-            var recognizer=TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+            com.google.mlkit.vision.text.TextRecognizer recognizer =
+    TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
             recognizer.process(InputImage.fromBitmap(crop,0)).addOnSuccessListener(text->{
                 String english=text.getText().trim();
                 recognizer.close();crop.recycle();
