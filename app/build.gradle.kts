@@ -12,8 +12,8 @@ android {
         minSdk = 26
         targetSdk = 35
 
-        versionCode = 2
-        versionName = "0.2"
+        versionCode = 3
+        versionName = "0.3"
     }
 
     buildTypes {
@@ -28,5 +28,6 @@ android {
 
 dependencies {
     implementation("com.google.mlkit:translate:17.0.3")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
 }
 
